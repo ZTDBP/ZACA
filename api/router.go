@@ -1,5 +1,5 @@
 /*
-Copyright 2022-present The Ztalab Authors.
+Copyright 2022-present The ZTDBP Authors.
 Licensed under the Apache License, Version 2.0 (the "License");
 you may not use this file except in compliance with the License.
 You may obtain a copy of the License at
@@ -19,13 +19,13 @@ import (
 	"github.com/prometheus/client_golang/prometheus/promhttp"
 	swaggerFiles "github.com/swaggo/files"
 	ginSwagger "github.com/swaggo/gin-swagger"
-	"github.com/ztalab/ZACA/api/helper"
-	"github.com/ztalab/ZACA/api/v1/ca"
-	"github.com/ztalab/ZACA/api/v1/certleaf"
-	"github.com/ztalab/ZACA/api/v1/health"
-	"github.com/ztalab/ZACA/api/v1/workload"
-	"github.com/ztalab/ZACA/core"
-	"github.com/ztalab/ZACA/docs"
+	"github.com/ztdbp/ZACA/api/helper"
+	"github.com/ztdbp/ZACA/api/v1/ca"
+	"github.com/ztdbp/ZACA/api/v1/certleaf"
+	"github.com/ztdbp/ZACA/api/v1/health"
+	"github.com/ztdbp/ZACA/api/v1/workload"
+	"github.com/ztdbp/ZACA/core"
+	"github.com/ztdbp/ZACA/docs"
 )
 
 func Serve() *gin.Engine {

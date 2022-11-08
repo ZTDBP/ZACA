@@ -1,5 +1,5 @@
 /*
-Copyright 2022-present The Ztalab Authors.
+Copyright 2022-present The ZTDBP Authors.
 Licensed under the Apache License, Version 2.0 (the "License");
 you may not use this file except in compliance with the License.
 You may obtain a copy of the License at
@@ -18,8 +18,8 @@ import (
 	"fmt"
 	"io/ioutil"
 
-	"github.com/ztalab/ZACA/pkg/logger"
-	"github.com/ztalab/cfssl/helpers"
+	"github.com/ztdbp/ZACA/pkg/logger"
+	"github.com/ztdbp/cfssl/helpers"
 )
 
 func getTrustCerts(path string) ([]*x509.Certificate, error) {

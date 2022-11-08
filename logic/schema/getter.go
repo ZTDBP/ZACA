@@ -1,5 +1,5 @@
 /*
-Copyright 2022-present The Ztalab Authors.
+Copyright 2022-present The ZTDBP Authors.
 Licensed under the Apache License, Version 2.0 (the "License");
 you may not use this file except in compliance with the License.
 You may obtain a copy of the License at
@@ -20,11 +20,11 @@ import (
 
 	"github.com/mayocream/pki/pkg/x509util"
 	"github.com/pkg/errors"
-	cfCertInfo "github.com/ztalab/cfssl/certinfo"
-	"github.com/ztalab/cfssl/helpers"
+	cfCertInfo "github.com/ztdbp/cfssl/certinfo"
+	"github.com/ztdbp/cfssl/helpers"
 
-	"github.com/ztalab/ZACA/database/mysql/cfssl-model/model"
-	"github.com/ztalab/ZACA/pkg/spiffe"
+	"github.com/ztdbp/ZACA/database/mysql/cfssl-model/model"
+	"github.com/ztdbp/ZACA/pkg/spiffe"
 )
 
 func GetFullCertByX509Cert(cert *x509.Certificate) *FullCert {

@@ -1,5 +1,5 @@
 /*
-Copyright 2022-present The Ztalab Authors.
+Copyright 2022-present The ZTDBP Authors.
 Licensed under the Apache License, Version 2.0 (the "License");
 you may not use this file except in compliance with the License.
 You may obtain a copy of the License at
@@ -14,8 +14,8 @@ limitations under the License.
 package ca
 
 import (
-	"github.com/ztalab/ZACA/api/helper"
-	logic "github.com/ztalab/ZACA/logic/ca"
+	"github.com/ztdbp/ZACA/api/helper"
+	logic "github.com/ztdbp/ZACA/logic/ca"
 )
 
 func init() {

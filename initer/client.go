@@ -1,5 +1,5 @@
 /*
-Copyright 2022-present The Ztalab Authors.
+Copyright 2022-present The ZTDBP Authors.
 Licensed under the Apache License, Version 2.0 (the "License");
 you may not use this file except in compliance with the License.
 You may obtain a copy of the License at
@@ -21,13 +21,13 @@ import (
 
 	vaultAPI "github.com/hashicorp/vault/api"
 	"github.com/pkg/errors"
-	influx_client "github.com/ztalab/ZACA/pkg/influxdb/influxdb-client/v2"
+	influx_client "github.com/ztdbp/ZACA/pkg/influxdb/influxdb-client/v2"
 	mysqlDriver "gorm.io/driver/mysql"
 	"gorm.io/gorm"
 
-	"github.com/ztalab/ZACA/core"
-	"github.com/ztalab/ZACA/database/mysql"
-	"github.com/ztalab/ZACA/pkg/influxdb"
+	"github.com/ztdbp/ZACA/core"
+	"github.com/ztdbp/ZACA/database/mysql"
+	"github.com/ztdbp/ZACA/pkg/influxdb"
 )
 
 func mysqlDialer(config *core.Config, logger *core.Logger) (*gorm.DB, error) {

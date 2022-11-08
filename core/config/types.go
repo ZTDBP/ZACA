@@ -1,5 +1,5 @@
 /*
-Copyright 2022-present The Ztalab Authors.
+Copyright 2022-present The ZTDBP Authors.
 Licensed under the Apache License, Version 2.0 (the "License");
 you may not use this file except in compliance with the License.
 You may obtain a copy of the License at
@@ -14,9 +14,9 @@ limitations under the License.
 package config
 
 import (
-	cfssl_config "github.com/ztalab/cfssl/config"
+	cfssl_config "github.com/ztdbp/cfssl/config"
 
-	"github.com/ztalab/ZACA/pkg/influxdb"
+	"github.com/ztdbp/ZACA/pkg/influxdb"
 )
 
 const (

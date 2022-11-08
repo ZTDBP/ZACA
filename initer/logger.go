@@ -1,5 +1,5 @@
 /*
-Copyright 2022-present The Ztalab Authors.
+Copyright 2022-present The ZTDBP Authors.
 Licensed under the Apache License, Version 2.0 (the "License");
 you may not use this file except in compliance with the License.
 You may obtain a copy of the License at
@@ -14,13 +14,13 @@ limitations under the License.
 package initer
 
 import (
-	"github.com/ztalab/ZACA/pkg/logger/redis_hook"
+	"github.com/ztdbp/ZACA/pkg/logger/redis_hook"
 	"log"
 
-	"github.com/ztalab/ZACA/pkg/logger"
+	"github.com/ztdbp/ZACA/pkg/logger"
 	"go.uber.org/zap/zapcore"
 
-	"github.com/ztalab/ZACA/core"
+	"github.com/ztdbp/ZACA/core"
 )
 
 func initLogger(config *core.Config) {

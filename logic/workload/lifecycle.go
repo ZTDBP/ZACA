@@ -1,5 +1,5 @@
 /*
-Copyright 2022-present The Ztalab Authors.
+Copyright 2022-present The ZTDBP Authors.
 Licensed under the Apache License, Version 2.0 (the "License");
 you may not use this file except in compliance with the License.
 You may obtain a copy of the License at
@@ -17,12 +17,12 @@ import (
 	"time"
 
 	"github.com/pkg/errors"
-	"github.com/ztalab/cfssl/ocsp"
+	"github.com/ztdbp/cfssl/ocsp"
 	"gorm.io/gorm"
 
-	"github.com/ztalab/ZACA/database/mysql/cfssl-model/dao"
-	"github.com/ztalab/ZACA/database/mysql/cfssl-model/model"
-	"github.com/ztalab/ZACA/logic/events"
+	"github.com/ztdbp/ZACA/database/mysql/cfssl-model/dao"
+	"github.com/ztdbp/ZACA/database/mysql/cfssl-model/model"
+	"github.com/ztdbp/ZACA/logic/events"
 )
 
 type RevokeCertsParams struct {

@@ -1,5 +1,5 @@
 /*
-Copyright 2022-present The Ztalab Authors.
+Copyright 2022-present The ZTDBP Authors.
 Licensed under the Apache License, Version 2.0 (the "License");
 you may not use this file except in compliance with the License.
 You may obtain a copy of the License at
@@ -14,12 +14,12 @@ limitations under the License.
 package datastore
 
 import (
-	"github.com/ztalab/ZACA/pkg/logger"
+	"github.com/ztdbp/ZACA/pkg/logger"
 	"time"
 
-	"github.com/ztalab/ZACA/core"
-	"github.com/ztalab/ZACA/database/mysql/cfssl-model/model"
-	"github.com/ztalab/ZACA/pkg/vaultsecret"
+	"github.com/ztdbp/ZACA/core"
+	"github.com/ztdbp/ZACA/database/mysql/cfssl-model/model"
+	"github.com/ztdbp/ZACA/pkg/vaultsecret"
 )
 
 // RunMigration Migrate MySQL data to vault

@@ -1,5 +1,5 @@
 /*
-Copyright 2022-present The Ztalab Authors.
+Copyright 2022-present The ZTDBP Authors.
 Licensed under the Apache License, Version 2.0 (the "License");
 you may not use this file except in compliance with the License.
 You may obtain a copy of the License at
@@ -20,14 +20,14 @@ import (
 	"github.com/go-resty/resty/v2"
 	jsoniter "github.com/json-iterator/go"
 	"github.com/pkg/errors"
-	"github.com/ztalab/cfssl/helpers"
+	"github.com/ztdbp/cfssl/helpers"
 	"gorm.io/gorm"
 
-	"github.com/ztalab/ZACA/ca/upperca"
-	"github.com/ztalab/ZACA/core"
-	"github.com/ztalab/ZACA/database/mysql/cfssl-model/dao"
-	"github.com/ztalab/ZACA/logic/schema"
-	"github.com/ztalab/zaca-sdk/caclient"
+	"github.com/ztdbp/ZACA/ca/upperca"
+	"github.com/ztdbp/ZACA/core"
+	"github.com/ztdbp/ZACA/database/mysql/cfssl-model/dao"
+	"github.com/ztdbp/ZACA/logic/schema"
+	"github.com/ztdbp/zaca-sdk/caclient"
 )
 
 const (

@@ -1,5 +1,5 @@
 /*
-Copyright 2022-present The Ztalab Authors.
+Copyright 2022-present The ZTDBP Authors.
 Licensed under the Apache License, Version 2.0 (the "License");
 you may not use this file except in compliance with the License.
 You may obtain a copy of the License at
@@ -18,9 +18,9 @@ import (
 	"time"
 
 	"github.com/pkg/errors"
-	"github.com/ztalab/cfssl/config"
+	"github.com/ztdbp/cfssl/config"
 
-	"github.com/ztalab/ZACA/core"
+	"github.com/ztdbp/ZACA/core"
 )
 
 type RoleProfile struct {

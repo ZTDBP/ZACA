@@ -1,5 +1,5 @@
 /*
-Copyright 2022-present The Ztalab Authors.
+Copyright 2022-present The ZTDBP Authors.
 Licensed under the Apache License, Version 2.0 (the "License");
 you may not use this file except in compliance with the License.
 You may obtain a copy of the License at
@@ -15,17 +15,17 @@ package initer
 
 import (
 	"github.com/urfave/cli"
-	"github.com/ztalab/ZACA/ca/datastore"
-	"github.com/ztalab/ZACA/ca/keymanager"
-	"github.com/ztalab/ZACA/core"
-	"github.com/ztalab/ZACA/pkg/logger"
-	"github.com/ztalab/ZACA/pkg/vaultsecret"
-	"github.com/ztalab/cfssl/hook"
+	"github.com/ztdbp/ZACA/ca/datastore"
+	"github.com/ztdbp/ZACA/ca/keymanager"
+	"github.com/ztdbp/ZACA/core"
+	"github.com/ztdbp/ZACA/pkg/logger"
+	"github.com/ztdbp/ZACA/pkg/vaultsecret"
+	"github.com/ztdbp/cfssl/hook"
 	"log"
 	"os"
 
 	// ...
-	_ "github.com/ztalab/ZACA/util"
+	_ "github.com/ztdbp/ZACA/util"
 )
 
 // Init Initialization

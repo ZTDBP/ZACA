@@ -1,5 +1,5 @@
 /*
-Copyright 2022-present The Ztalab Authors.
+Copyright 2022-present The ZTDBP Authors.
 Licensed under the Apache License, Version 2.0 (the "License");
 you may not use this file except in compliance with the License.
 You may obtain a copy of the License at
@@ -17,10 +17,10 @@ import (
 	"context"
 
 	vaultAPI "github.com/hashicorp/vault/api"
-	"github.com/ztalab/ZACA/core/config"
-	"github.com/ztalab/ZACA/pkg/influxdb"
-	"github.com/ztalab/ZACA/pkg/logger"
-	"github.com/ztalab/ZACA/pkg/vaultsecret"
+	"github.com/ztdbp/ZACA/core/config"
+	"github.com/ztdbp/ZACA/pkg/influxdb"
+	"github.com/ztdbp/ZACA/pkg/logger"
+	"github.com/ztdbp/ZACA/pkg/vaultsecret"
 	"gorm.io/gorm"
 )
 

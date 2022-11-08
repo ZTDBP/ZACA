@@ -1,5 +1,5 @@
 /*
-Copyright 2022-present The Ztalab Authors.
+Copyright 2022-present The ZTDBP Authors.
 Licensed under the Apache License, Version 2.0 (the "License");
 you may not use this file except in compliance with the License.
 You may obtain a copy of the License at
@@ -28,18 +28,18 @@ import (
 	"github.com/gorilla/mux"
 	"github.com/jmoiron/sqlx"
 	"github.com/pkg/errors"
-	"github.com/ztalab/cfssl/certdb/sql"
-	"github.com/ztalab/cfssl/cli"
+	"github.com/ztdbp/cfssl/certdb/sql"
+	"github.com/ztdbp/cfssl/cli"
 	// ...
-	_ "github.com/ztalab/cfssl/cli/ocspsign"
-	"github.com/ztalab/cfssl/ocsp"
-	"github.com/ztalab/cfssl/signer"
-	"github.com/ztalab/cfssl/signer/local"
+	_ "github.com/ztdbp/cfssl/cli/ocspsign"
+	"github.com/ztdbp/cfssl/ocsp"
+	"github.com/ztdbp/cfssl/signer"
+	"github.com/ztdbp/cfssl/signer/local"
 
-	"github.com/ztalab/ZACA/ca/keymanager"
-	ocsp_responder "github.com/ztalab/ZACA/ca/ocsp"
-	"github.com/ztalab/ZACA/ca/upperca"
-	"github.com/ztalab/ZACA/core"
+	"github.com/ztdbp/ZACA/ca/keymanager"
+	ocsp_responder "github.com/ztdbp/ZACA/ca/ocsp"
+	"github.com/ztdbp/ZACA/ca/upperca"
+	"github.com/ztdbp/ZACA/core"
 )
 
 var (

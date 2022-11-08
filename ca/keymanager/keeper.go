@@ -1,5 +1,5 @@
 /*
-Copyright 2022-present The Ztalab Authors.
+Copyright 2022-present The ZTDBP Authors.
 Licensed under the Apache License, Version 2.0 (the "License");
 you may not use this file except in compliance with the License.
 You may obtain a copy of the License at
@@ -23,17 +23,17 @@ import (
 
 	jsoniter "github.com/json-iterator/go"
 	"github.com/pkg/errors"
-	"github.com/ztalab/ZACA/core"
-	"github.com/ztalab/ZACA/database/mysql/cfssl-model/model"
-	"github.com/ztalab/ZACA/logic/schema"
-	"github.com/ztalab/ZACA/pkg/influxdb"
-	"github.com/ztalab/ZACA/pkg/logger"
-	"github.com/ztalab/ZACA/pkg/memorycacher"
-	"github.com/ztalab/ZACA/pkg/vaultsecret"
-	cfssl_client "github.com/ztalab/cfssl/api/client"
-	"github.com/ztalab/cfssl/helpers"
-	"github.com/ztalab/cfssl/hook"
-	"github.com/ztalab/cfssl/info"
+	"github.com/ztdbp/ZACA/core"
+	"github.com/ztdbp/ZACA/database/mysql/cfssl-model/model"
+	"github.com/ztdbp/ZACA/logic/schema"
+	"github.com/ztdbp/ZACA/pkg/influxdb"
+	"github.com/ztdbp/ZACA/pkg/logger"
+	"github.com/ztdbp/ZACA/pkg/memorycacher"
+	"github.com/ztdbp/ZACA/pkg/vaultsecret"
+	cfssl_client "github.com/ztdbp/cfssl/api/client"
+	"github.com/ztdbp/cfssl/helpers"
+	"github.com/ztdbp/cfssl/hook"
+	"github.com/ztdbp/cfssl/info"
 	"gorm.io/gorm"
 )
 

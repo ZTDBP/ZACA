@@ -1,4 +1,4 @@
-module github.com/ztalab/ZACA
+module github.com/ztdbp/ZACA
 
 go 1.17
 
@@ -27,8 +27,8 @@ require (
 	github.com/swaggo/swag v1.8.1
 	github.com/tal-tech/go-zero v1.1.4
 	github.com/urfave/cli v1.22.7
-	github.com/ztalab/cfssl v0.0.3
-	github.com/ztalab/zaca-sdk v0.0.2
+	github.com/ztdbp/cfssl v0.0.3
+	github.com/ztdbp/zaca-sdk v0.0.2
 	go.uber.org/multierr v1.8.0
 	go.uber.org/zap v1.21.0
 	golang.org/x/crypto v0.0.0-20220411220226-7b82a4e95df4

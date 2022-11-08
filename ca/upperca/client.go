@@ -1,5 +1,5 @@
 /*
-Copyright 2022-present The Ztalab Authors.
+Copyright 2022-present The ZTDBP Authors.
 Licensed under the Apache License, Version 2.0 (the "License");
 you may not use this file except in compliance with the License.
 You may obtain a copy of the License at
@@ -16,9 +16,9 @@ package upperca
 import (
 	"strings"
 
-	cfssl_client "github.com/ztalab/cfssl/api/client"
+	cfssl_client "github.com/ztdbp/cfssl/api/client"
 
-	"github.com/ztalab/ZACA/ca/keymanager"
+	"github.com/ztdbp/ZACA/ca/keymanager"
 )
 
 func ProxyRequest(f func(host string) error) error {

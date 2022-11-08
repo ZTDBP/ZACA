@@ -1,5 +1,5 @@
 /*
-Copyright 2022-present The Ztalab Authors.
+Copyright 2022-present The ZTDBP Authors.
 Licensed under the Apache License, Version 2.0 (the "License");
 you may not use this file except in compliance with the License.
 You may obtain a copy of the License at
@@ -19,10 +19,10 @@ import (
 	"os"
 	"strings"
 
-	cfssl_config "github.com/ztalab/cfssl/config"
+	cfssl_config "github.com/ztdbp/cfssl/config"
 
-	"github.com/ztalab/ZACA/core"
-	"github.com/ztalab/ZACA/core/config"
+	"github.com/ztdbp/ZACA/core"
+	"github.com/ztdbp/ZACA/core/config"
 	"gopkg.in/yaml.v3"
 )
 

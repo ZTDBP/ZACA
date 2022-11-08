@@ -1,5 +1,5 @@
 /*
-Copyright 2022-present The Ztalab Authors.
+Copyright 2022-present The ZTDBP Authors.
 Licensed under the Apache License, Version 2.0 (the "License");
 you may not use this file except in compliance with the License.
 You may obtain a copy of the License at
@@ -16,10 +16,10 @@ package certleaf
 import (
 	"errors"
 
-	"github.com/ztalab/ZACA/api/helper"
-	caLogic "github.com/ztalab/ZACA/logic/ca"
-	logic "github.com/ztalab/ZACA/logic/certleaf"
-	"github.com/ztalab/ZACA/logic/schema"
+	"github.com/ztdbp/ZACA/api/helper"
+	caLogic "github.com/ztdbp/ZACA/logic/ca"
+	logic "github.com/ztdbp/ZACA/logic/certleaf"
+	"github.com/ztdbp/ZACA/logic/schema"
 )
 
 // CertChain Certificate chain

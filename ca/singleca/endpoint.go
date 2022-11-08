@@ -1,5 +1,5 @@
 /*
-Copyright 2022-present The Ztalab Authors.
+Copyright 2022-present The ZTDBP Authors.
 Licensed under the Apache License, Version 2.0 (the "License");
 you may not use this file except in compliance with the License.
 You may obtain a copy of the License at
@@ -19,24 +19,24 @@ import (
 	"net/url"
 	"strings"
 
-	"github.com/ztalab/ZACA/pkg/logger"
-	"github.com/ztalab/cfssl/api"
-	"github.com/ztalab/cfssl/api/bundle"
-	"github.com/ztalab/cfssl/api/certinfo"
-	"github.com/ztalab/cfssl/api/crl"
-	"github.com/ztalab/cfssl/api/gencrl"
-	"github.com/ztalab/cfssl/api/generator"
-	"github.com/ztalab/cfssl/api/health"
-	"github.com/ztalab/cfssl/api/info"
-	"github.com/ztalab/cfssl/api/initca"
-	apiocsp "github.com/ztalab/cfssl/api/ocsp"
-	"github.com/ztalab/cfssl/api/scan"
-	"github.com/ztalab/cfssl/api/signhandler"
-	certsql "github.com/ztalab/cfssl/certdb/sql"
+	"github.com/ztdbp/ZACA/pkg/logger"
+	"github.com/ztdbp/cfssl/api"
+	"github.com/ztdbp/cfssl/api/bundle"
+	"github.com/ztdbp/cfssl/api/certinfo"
+	"github.com/ztdbp/cfssl/api/crl"
+	"github.com/ztdbp/cfssl/api/gencrl"
+	"github.com/ztdbp/cfssl/api/generator"
+	"github.com/ztdbp/cfssl/api/health"
+	"github.com/ztdbp/cfssl/api/info"
+	"github.com/ztdbp/cfssl/api/initca"
+	apiocsp "github.com/ztdbp/cfssl/api/ocsp"
+	"github.com/ztdbp/cfssl/api/scan"
+	"github.com/ztdbp/cfssl/api/signhandler"
+	certsql "github.com/ztdbp/cfssl/certdb/sql"
 
-	"github.com/ztalab/ZACA/ca/keymanager"
-	"github.com/ztalab/ZACA/ca/revoke"
-	"github.com/ztalab/ZACA/ca/signer"
+	"github.com/ztdbp/ZACA/ca/keymanager"
+	"github.com/ztdbp/ZACA/ca/revoke"
+	"github.com/ztdbp/ZACA/ca/signer"
 )
 
 // V1APIPrefix is the prefix of all CFSSL V1 API Endpoints.

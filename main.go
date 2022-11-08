@@ -1,5 +1,5 @@
 /*
-Copyright 2022-present The Ztalab Authors.
+Copyright 2022-present The ZTDBP Authors.
 Licensed under the Apache License, Version 2.0 (the "License");
 you may not use this file except in compliance with the License.
 You may obtain a copy of the License at
@@ -16,9 +16,9 @@ package main
 import (
 	"context"
 	"github.com/urfave/cli"
-	"github.com/ztalab/ZACA/cmd"
-	"github.com/ztalab/ZACA/initer"
-	"github.com/ztalab/ZACA/pkg/logger"
+	"github.com/ztdbp/ZACA/cmd"
+	"github.com/ztdbp/ZACA/initer"
+	"github.com/ztdbp/ZACA/pkg/logger"
 	"os"
 )
 

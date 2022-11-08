@@ -1,5 +1,5 @@
 /*
-Copyright 2022-present The Ztalab Authors.
+Copyright 2022-present The ZTDBP Authors.
 Licensed under the Apache License, Version 2.0 (the "License");
 you may not use this file except in compliance with the License.
 You may obtain a copy of the License at
@@ -26,12 +26,12 @@ import (
 	"strings"
 	"time"
 
-	cf_csr "github.com/ztalab/cfssl/csr"
-	"github.com/ztalab/cfssl/helpers"
+	cf_csr "github.com/ztdbp/cfssl/csr"
+	"github.com/ztdbp/cfssl/helpers"
 
-	"github.com/ztalab/ZACA/pkg/pkiutil"
-	"github.com/ztalab/ZACA/pkg/spiffe"
-	"github.com/ztalab/ZACA/util"
+	"github.com/ztdbp/ZACA/pkg/pkiutil"
+	"github.com/ztdbp/ZACA/pkg/spiffe"
+	"github.com/ztdbp/ZACA/util"
 )
 
 type SupportedSignatureAlgorithms string

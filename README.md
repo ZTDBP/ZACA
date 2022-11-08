@@ -4,7 +4,7 @@
 </p>
 
 # ZACA
-[![License](https://img.shields.io/badge/License-Apache%202.0-blue.svg)](https://opensource.org/licenses/Apache-2.0)  [![GoDoc](https://godoc.org/github.com/cloudflare/cfssl?status.svg)](https://github.com/ztalab/ZACA)
+[![License](https://img.shields.io/badge/License-Apache%202.0-blue.svg)](https://opensource.org/licenses/Apache-2.0)  [![GoDoc](https://godoc.org/github.com/cloudflare/cfssl?status.svg)](https://github.com/ztdbp/ZACA)
 
 ZACA is a PKI developed based on cloudflare cfssl,Public key infrastructure (PKI) governs the issuance of digital certificates to protect sensitive data, provide unique digital identities for users, devices and applications and secure end-to-end communications.
 
@@ -46,7 +46,7 @@ Since each CA has a certificate of its own, layers of trust get created through 
 Building cfssl requires a [working Go 1.12+ installation](http://golang.org/doc/install).
 
 ```
-$ git clone git@github.com:ztalab/ZACA.git
+$ git clone git@github.com:ztdbp/ZACA.git
 $ cd ZACA
 $ make
 ```
@@ -106,10 +106,10 @@ Start command：`zaca api`，Default listening port 8080
 ### SDK Installation
 
 ```
-$ go get github.com/ztalab/zaca-sdk
+$ go get github.com/ztdbp/zaca-sdk
 ```
 
 The classic usage of the ZACA SDK is that the client and the server use the certificate issued by the CA center for encrypted communication. The following is the usage of the sdk between the client and the server.
 
-See：[Demo](https://github.com/ztalab/zaca-sdk/tree/master/caclient/examples)
+See：[Demo](https://github.com/ztdbp/zaca-sdk/tree/master/caclient/examples)
 
