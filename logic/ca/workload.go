@@ -18,7 +18,7 @@ import (
 	"time"
 
 	"github.com/pkg/errors"
-	"github.com/tal-tech/go-zero/core/fx"
+	"github.com/zeromicro/go-zero/core/fx"
 	"gorm.io/gorm"
 
 	"github.com/ztdbp/ZACA/database/mysql/cfssl-model/dao"
@@ -30,11 +30,11 @@ const AllCertsCacheKey = "all_certs_cache"
 
 // WorkloadUnit UniqueID Divided workload unit
 type WorkloadUnit struct {
-	Role          string `json:"role"`
-	ValidNum      int           `json:"valid_num"`       // Number of valid certificates
-	FirstIssuedAt time.Time     `json:"first_issued_at"` // Date of first issuance of certificate
-	UniqueId      string        `json:"unique_id"`
-	Forbidden     bool          `json:"forbidden"` // Is it prohibited
+	Role          string    `json:"role"`
+	ValidNum      int       `json:"valid_num"`       // Number of valid certificates
+	FirstIssuedAt time.Time `json:"first_issued_at"` // Date of first issuance of certificate
+	UniqueId      string    `json:"unique_id"`
+	Forbidden     bool      `json:"forbidden"` // Is it prohibited
 }
 
 type WorkloadUnitsParams struct {

@@ -19,7 +19,7 @@ import (
 
 	"github.com/araddon/dateparse"
 	"github.com/pkg/errors"
-	"github.com/tal-tech/go-zero/core/fx"
+	"github.com/zeromicro/go-zero/core/fx"
 	"github.com/ztdbp/ZACA/pkg/logger"
 	"go.uber.org/zap"
 	"gorm.io/gorm"
