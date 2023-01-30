@@ -1,6 +1,6 @@
 module github.com/ztdbp/ZACA
 
-go 1.17
+go 1.19
 
 require (
 	github.com/araddon/dateparse v0.0.0-20210207001429-0eec95c9db7e
@@ -35,12 +35,6 @@ require (
 	gopkg.in/yaml.v3 v3.0.1
 	gorm.io/driver/mysql v1.0.3
 	gorm.io/gorm v1.21.4
-)
-
-replace (
-	github.com/ajstarks/svgo v0.0.0-20180226025133-644b8db467af => github.com/ajstarks/svgo v0.0.0-20211024235047-1546f124cd8b
-	github.com/chzyer/logex v1.1.10 => github.com/chzyer/logex v1.2.1
-	github.com/zmap/rc2 v0.0.0-20131011165748-24b9757f5521 => github.com/zmap/rc2 v0.0.0-20190804163417-abaa70531248
 )
 
 require (
@@ -139,4 +133,10 @@ require (
 	k8s.io/klog/v2 v2.80.1 // indirect
 )
 
-replace github.com/zmap/zcrypto v0.0.0-20220803033029-557f3e4940be => github.com/zmap/zcrypto v0.0.0-20200911161511-43ff0ea04f21
+replace (
+	github.com/ajstarks/svgo v0.0.0-20180226025133-644b8db467af => github.com/ajstarks/svgo v0.0.0-20211024235047-1546f124cd8b
+	github.com/chzyer/logex v1.1.10 => github.com/chzyer/logex v1.2.1
+	github.com/zmap/rc2 v0.0.0-20131011165748-24b9757f5521 => github.com/zmap/rc2 v0.0.0-20190804163417-abaa70531248
+	github.com/zmap/zcrypto v0.0.0-20220803033029-557f3e4940be => github.com/zmap/zcrypto v0.0.0-20200911161511-43ff0ea04f21
+	google.golang.org/genproto v0.0.0-20221111202108-142d8a6fa32e => google.golang.org/genproto v0.0.0-20220706185917-7780775163c4
+)
