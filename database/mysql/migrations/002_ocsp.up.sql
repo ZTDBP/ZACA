@@ -1,3 +1,5 @@
+-- +migrate Up
+-- SQL in section 'Up' is executed when this migration is applied
 CREATE TABLE IF NOT EXISTS `ocsp_responses` (
   `serial_number` varchar(128) NOT NULL,
   `authority_key_identifier` varchar(128) NOT NULL,

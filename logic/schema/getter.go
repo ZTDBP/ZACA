@@ -17,8 +17,8 @@ import (
 	"crypto/x509"
 	"encoding/hex"
 	"fmt"
+	"github.com/ztdbp/ZACA/pkg/pkiutil"
 
-	"github.com/mayocream/pki/pkg/x509util"
 	"github.com/pkg/errors"
 	cfCertInfo "github.com/ztdbp/cfssl/certinfo"
 	"github.com/ztdbp/cfssl/helpers"
@@ -30,8 +30,8 @@ import (
 func GetFullCertByX509Cert(cert *x509.Certificate) *FullCert {
 	certBytes := helpers.EncodeCertificatePEM(cert)
 	var certStr string
-	if ctCert, err := x509util.CertificateFromPEM(certBytes); err == nil {
-		certStr = x509util.CertificateToString(ctCert)
+	if ctCert, err := pkiutil.CertificateFromPEM(certBytes); err == nil {
+		certStr = pkiutil.CertificateToString(ctCert)
 	}
 	return &FullCert{
 		SampleCert: SampleCert{
@@ -54,8 +54,8 @@ func GetFullCertByModelCert(row *model.Certificates) (*FullCert, error) {
 		return nil, errors.Wrap(err, "cert parse error")
 	}
 	var certStr string
-	if ctCert, err := x509util.CertificateFromPEM([]byte(row.Pem)); err == nil {
-		certStr = x509util.CertificateToString(ctCert)
+	if ctCert, err := pkiutil.CertificateFromPEM([]byte(row.Pem)); err == nil {
+		certStr = pkiutil.CertificateToString(ctCert)
 	}
 	return &FullCert{
 		SampleCert: SampleCert{

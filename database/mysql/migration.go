@@ -14,16 +14,26 @@ limitations under the License.
 package mysql
 
 import (
+	"fmt"
+	migrate "github.com/rubenv/sql-migrate"
+	"github.com/ztdbp/ZACA/pkg/logger"
 	_ "gorm.io/driver/mysql"
 	"gorm.io/gorm"
 )
 
 func Migrate(db *gorm.DB) error {
-	//lo := logger.Named("migration")
-	//sql, err := db.DB()
-	//if err != nil {
-	//	return fmt.Errorf("failed to get DB instance: %v", err)
-	//}
+	lo := logger.Named("migration")
+	sql, err := db.DB()
+	if err != nil {
+		return fmt.Errorf("failed to get DB instance: %v", err)
+	}
+	migrations := &migrate.FileMigrationSource{
+		Dir: "database/mysql/migrations/",
+	}
+	n, err := migrate.Exec(sql, "mysql", migrations, migrate.Up)
+	if err != nil {
+		return fmt.Errorf("migrate exec error: %v", err)
+	}
 	//driver, err := mysql.WithInstance(sql, &mysql.Config{})
 	//m, err := migrate.NewWithDatabaseInstance(
 	//	"file://database/mysql/migrations/",
@@ -38,6 +48,6 @@ func Migrate(db *gorm.DB) error {
 	//	}
 	//	return fmt.Errorf("MySQL migration exception: %v", err)
 	//}
-	//lo.Info("Migrations success.")
+	lo.Info("Migrations success. ", n)
 	return nil
 }

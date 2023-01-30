@@ -1,3 +1,5 @@
+-- +migrate Up
+-- SQL in section 'Up' is executed when this migration is applied
 ALTER TABLE `certificates` CHANGE `common_name` `common_name` varchar(128) CHARACTER SET utf8mb4 COLLATE utf8mb4_general_ci NULL COMMENT '';
 
 CREATE INDEX `common_name_idx` ON `certificates`(`common_name`) USING BTREE;
