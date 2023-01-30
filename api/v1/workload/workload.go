@@ -19,7 +19,6 @@ import (
 
 	"github.com/araddon/dateparse"
 	"github.com/pkg/errors"
-	"github.com/zeromicro/go-zero/core/fx"
 	"github.com/ztdbp/ZACA/pkg/logger"
 	"go.uber.org/zap"
 	"gorm.io/gorm"
@@ -184,30 +183,15 @@ func (a *API) UnitsStatus(c *helper.HTTPWrapContext) (interface{}, error) {
 	c.BindG(&req)
 
 	statusMap := make(UnitsStatusMap)
-	var err error
 
-	fx.From(func(source chan<- interface{}) {
-		for _, uid := range req.UniqueIds {
-			if len(uid) == 0 {
-				continue
-			}
-			source <- uid
-		}
-	}).Split(300).ForEach(func(obj interface{}) {
-		group := obj.([]interface{})
-		var uids []string
-		for _, item := range group {
-			uids = append(uids, item.(string))
-		}
-		var sm UnitsStatusMap
-		sm, err = a.getUnitsStatus(uids)
-		if err != nil {
-			return
-		}
-		for k, v := range sm {
-			statusMap[k] = v
-		}
-	})
+	var sm UnitsStatusMap
+	sm, err := a.getUnitsStatus(req.UniqueIds)
+	if err != nil {
+		return nil, err
+	}
+	for k, v := range sm {
+		statusMap[k] = v
+	}
 
 	if err != nil {
 		return nil, err

@@ -36,14 +36,14 @@ func Serve() *gin.Engine {
 	pprof.Register(router)
 	router.GET("/metrics", gin.WrapH(promhttp.Handler()))
 
-	if core.Is.Config.SwaggerEnabled {
-		docs.SwaggerInfo.Title = "CA Server APIs"
-		docs.SwaggerInfo.Version = "0.1"
-		docs.SwaggerInfo.BasePath = "/api/v1"
+	//if core.Is.Config.SwaggerEnabled {
+	docs.SwaggerInfo.Title = "CA Server APIs"
+	docs.SwaggerInfo.Version = "0.1"
+	docs.SwaggerInfo.BasePath = "/api/v1"
 
-		url := ginSwagger.URL("/swagger/doc.json")
-		router.GET("/swagger/*any", ginSwagger.WrapHandler(swaggerFiles.Handler, url))
-	}
+	url := ginSwagger.URL("/swagger/doc.json")
+	router.GET("/swagger/*any", ginSwagger.WrapHandler(swaggerFiles.Handler, url))
+	//}
 
 	// API V1
 	v1 := router.Group("/api/v1")
@@ -56,6 +56,7 @@ func Serve() *gin.Engine {
 		prefix.GET("/cert", helper.WrapH(handler.CertDetail))
 		prefix.GET("/units_forbid_query", helper.WrapH(handler.UnitsForbidQuery))
 		prefix.GET("/units_certs_list", helper.WrapH(handler.UnitsCertsList))
+		prefix.POST("/units_status", helper.WrapH(handler.UnitsStatus))
 		// Root CA Prohibit operation
 		if !core.Is.Config.Keymanager.SelfSign {
 			lifeCyclePrefix := prefix.Group("/lifecycle")
@@ -76,7 +77,6 @@ func Serve() *gin.Engine {
 		prefix := v1.Group("/ca")
 		handler := ca.NewAPI()
 		prefix.GET("/role_profiles", helper.WrapH(handler.RoleProfiles))
-		prefix.GET("/workload_units", helper.WrapH(handler.WorkloadUnits))
 		prefix.GET("/intermediate_topology", helper.WrapH(handler.IntermediateTopology))
 		prefix.GET("/upper_ca_intermediate_topology", helper.WrapH(handler.UpperCaIntermediateTopology))
 		prefix.GET("/overall_certs_count", helper.WrapH(handler.OverallCertsCount))
