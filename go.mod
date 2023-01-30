@@ -38,9 +38,8 @@ require (
 )
 
 replace (
+	github.com/ajstarks/svgo v0.0.0-20180226025133-644b8db467af => github.com/ajstarks/svgo v0.0.0-20211024235047-1546f124cd8b
 	github.com/chzyer/logex v1.1.10 => github.com/chzyer/logex v1.2.1
-	github.com/prometheus/prometheus v2.5.0+incompatible => github.com/prometheus/prometheus/v2 v2.29.2
-	github.com/zmap/rc2 v0.0.0-20131011165748-24b9757f5521 => github.com/zmap/rc2 v0.0.0-20190804163417-abaa70531248
 )
 
 require (
