@@ -43,6 +43,7 @@ func mysqlDialer(config *core.Config, logger *core.Logger) (*gorm.DB, error) {
 	}
 	if err = mysql.Migrate(db); err != nil {
 		logger.Errorf("MySQL Schema migrate error: %v", err)
+		return nil, err
 	}
 	return db, nil
 }
