@@ -24,7 +24,7 @@ require (
 	github.com/swaggo/gin-swagger v1.4.3
 	github.com/swaggo/swag v1.8.1
 	github.com/urfave/cli v1.22.7
-	github.com/ztalab/zta-tools v0.0.0-20230208021955-528a9790d4bd
+	github.com/ztalab/zta-tools v0.0.1
 	github.com/ztdbp/cfssl v0.0.5
 	github.com/ztdbp/zaca-sdk v0.0.7
 	go.uber.org/multierr v1.8.0

@@ -638,8 +638,8 @@ github.com/zmap/zcrypto v0.0.0-20200911161511-43ff0ea04f21 h1:PIpcdSOg3pMdFJUBg5
 github.com/zmap/zcrypto v0.0.0-20200911161511-43ff0ea04f21/go.mod h1:TxpejqcVKQjQaVVmMGfzx5HnmFMdIU+vLtaCyPBfGI4=
 github.com/zmap/zlint/v2 v2.2.1 h1:b2kI/ToXX16h2wjV2c6Da65eT6aTMtkLHKetXuM9EtI=
 github.com/zmap/zlint/v2 v2.2.1/go.mod h1:ixPWsdq8qLxYRpNUTbcKig3R7WgmspsHGLhCCs6rFAM=
-github.com/ztalab/zta-tools v0.0.0-20230208021955-528a9790d4bd h1:Vqv4KEBiL1Uwi/EZ4oduic9rF4x4v+Bo93BgtUZHedk=
-github.com/ztalab/zta-tools v0.0.0-20230208021955-528a9790d4bd/go.mod h1:WZYwDO2P8Dr+wBX04xMtpX7wgceX9ez8fV1iLJPs8dI=
+github.com/ztalab/zta-tools v0.0.1 h1:s5o91cDuIQBmLYlWVoC3lbNbNZ6hb/KJI77o5wC1r9c=
+github.com/ztalab/zta-tools v0.0.1/go.mod h1:WZYwDO2P8Dr+wBX04xMtpX7wgceX9ez8fV1iLJPs8dI=
 github.com/ztdbp/cfssl v0.0.5 h1:qMFmZ/S6JEFPMvLZ8w2zYG1YHlbjM9jvsidODCZ62Sc=
 github.com/ztdbp/cfssl v0.0.5/go.mod h1:3q2R1pZxotIXMSN6I2Rqksh7GiH7oqDZ1s2sIOIjh1w=
 github.com/ztdbp/zaca-sdk v0.0.7 h1:lT64hg7BrbaUTX1v0Y14s3Pv8kCairKslO19+NDsgMs=
