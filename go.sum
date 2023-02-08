@@ -641,6 +641,12 @@ github.com/zmap/zcrypto v0.0.0-20200911161511-43ff0ea04f21 h1:PIpcdSOg3pMdFJUBg5
 github.com/zmap/zcrypto v0.0.0-20200911161511-43ff0ea04f21/go.mod h1:TxpejqcVKQjQaVVmMGfzx5HnmFMdIU+vLtaCyPBfGI4=
 github.com/zmap/zlint/v2 v2.2.1 h1:b2kI/ToXX16h2wjV2c6Da65eT6aTMtkLHKetXuM9EtI=
 github.com/zmap/zlint/v2 v2.2.1/go.mod h1:ixPWsdq8qLxYRpNUTbcKig3R7WgmspsHGLhCCs6rFAM=
+github.com/ztalab/zta-tools v0.0.0-20230207095129-2414440d6112 h1:vHlsyWpxHLQ5cRPpe0wsp0l/KR0DoG7pB1+2G8fRY2A=
+github.com/ztalab/zta-tools v0.0.0-20230207095129-2414440d6112/go.mod h1:XXU45RWXev4xnnEHrSRfPqvJKw87NgKkoyU/dToViqM=
+github.com/ztalab/zta-tools v0.0.0-20230207100302-074b95b58e83 h1:q4X26Y+JaHWgTMQ9ayXP2gXzhc11iQvzcqIEOgtH4j8=
+github.com/ztalab/zta-tools v0.0.0-20230207100302-074b95b58e83/go.mod h1:WZYwDO2P8Dr+wBX04xMtpX7wgceX9ez8fV1iLJPs8dI=
+github.com/ztalab/zta-tools v0.0.0-20230208012245-ed54f37e8ea3 h1:Eot3GXIc4A7cKBu0RdakPKkj9Hsu/eggk79EnPKNmMw=
+github.com/ztalab/zta-tools v0.0.0-20230208012245-ed54f37e8ea3/go.mod h1:WZYwDO2P8Dr+wBX04xMtpX7wgceX9ez8fV1iLJPs8dI=
 github.com/ztdbp/cfssl v0.0.5 h1:qMFmZ/S6JEFPMvLZ8w2zYG1YHlbjM9jvsidODCZ62Sc=
 github.com/ztdbp/cfssl v0.0.5/go.mod h1:3q2R1pZxotIXMSN6I2Rqksh7GiH7oqDZ1s2sIOIjh1w=
 github.com/ztdbp/zaca-sdk v0.0.3 h1:aAoVhxah+xMdu/bVVFs9ceFjpcUiEKjbnyCNiLeQu8U=

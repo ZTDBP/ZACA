@@ -19,7 +19,7 @@ import (
 
 	"github.com/ztdbp/cfssl/certinfo"
 
-	"github.com/ztdbp/ZACA/pkg/spiffe"
+	"github.com/ztalab/zta-tools/pkg/spiffe"
 )
 
 type sdkRole string
@@ -31,7 +31,7 @@ type SampleCert struct {
 	CN        string    `mapstructure:"cn,omitempty" json:"cn"`
 	O         string    `mapstructure:"o,omitempty" json:"o"`
 	OU        string    `mapstructure:"ou,omitempty" json:"ou"`
-	Role      string   `mapstructure:"role,omitempty" json:"role,omitempty"`
+	Role      string    `mapstructure:"role,omitempty" json:"role,omitempty"`
 	UniqueId  string    `mapstructure:"unique_id,omitempty" json:"unique_id"`
 	Status    string    `mapstructure:"status,omitempty" json:"status" example:"good"`
 	IssuedAt  time.Time `mapstructure:"issued_at,omitempty" json:"issued_at,omitempty"`

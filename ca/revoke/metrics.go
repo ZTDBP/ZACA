@@ -18,9 +18,9 @@ import (
 	"sync/atomic"
 	"time"
 
+	"github.com/ztalab/zta-tools/influxdb"
 	"github.com/ztdbp/ZACA/core"
 	"github.com/ztdbp/ZACA/logic/schema"
-	"github.com/ztdbp/ZACA/pkg/influxdb"
 )
 
 var overallRevokeCounter uint64

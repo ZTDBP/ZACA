@@ -20,8 +20,8 @@ import (
 	"time"
 
 	"github.com/pkg/errors"
+	"github.com/ztalab/zta-tools/memorycacher"
 	"github.com/ztdbp/ZACA/pkg/logger"
-	"github.com/ztdbp/ZACA/pkg/memorycacher"
 	"github.com/ztdbp/cfssl/helpers"
 	"github.com/ztdbp/cfssl/hook"
 	"github.com/ztdbp/cfssl/ocsp"

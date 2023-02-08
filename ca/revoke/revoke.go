@@ -35,14 +35,11 @@ import (
 	"github.com/ztdbp/ZACA/util"
 )
 
-// A Handler accepts requests with a serial number parameter
-// and revokes
 type Handler struct {
 	dbAccessor certdb.Accessor
 	logger     *logger.Logger
 }
 
-// NewHandler returns a new http.Handler that handles a revoke request.
 func NewHandler(dbAccessor certdb.Accessor) http.Handler {
 	return &api.HTTPHandler{
 		Handler: &Handler{
@@ -53,7 +50,6 @@ func NewHandler(dbAccessor certdb.Accessor) http.Handler {
 	}
 }
 
-// This type is meant to be unmarshalled from JSON
 type JsonRevokeRequest struct {
 	Serial  string `json:"serial"`
 	AKI     string `json:"authority_key_id"`
@@ -64,8 +60,6 @@ type JsonRevokeRequest struct {
 	Profile string `json:"profile"`
 }
 
-// Handle responds to revocation requests. It attempts to revoke
-// a certificate with a given serial number
 func (h *Handler) Handle(w http.ResponseWriter, r *http.Request) error {
 	body, err := ioutil.ReadAll(r.Body)
 	if err != nil {
@@ -110,7 +104,6 @@ func (h *Handler) Handle(w http.ResponseWriter, r *http.Request) error {
 		return cf_err.NewBadRequest(err)
 	}
 
-	// TODO Compatible with standard cfssl authentication mode
 	var valid bool
 	if req.AuthKey == "" {
 		v := signature.NewVerifier(cert.PublicKey)

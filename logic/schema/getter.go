@@ -17,14 +17,14 @@ import (
 	"crypto/x509"
 	"encoding/hex"
 	"fmt"
-	"github.com/ztdbp/ZACA/pkg/pkiutil"
+	"github.com/ztalab/zta-tools/pkg/pkiutil"
 
 	"github.com/pkg/errors"
 	cfCertInfo "github.com/ztdbp/cfssl/certinfo"
 	"github.com/ztdbp/cfssl/helpers"
 
+	"github.com/ztalab/zta-tools/pkg/spiffe"
 	"github.com/ztdbp/ZACA/database/mysql/cfssl-model/model"
-	"github.com/ztdbp/ZACA/pkg/spiffe"
 )
 
 func GetFullCertByX509Cert(cert *x509.Certificate) *FullCert {

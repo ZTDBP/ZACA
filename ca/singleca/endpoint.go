@@ -34,9 +34,9 @@ import (
 	"github.com/ztdbp/cfssl/api/signhandler"
 	certsql "github.com/ztdbp/cfssl/certdb/sql"
 
+	"github.com/ztalab/zta-tools/pkg/signer"
 	"github.com/ztdbp/ZACA/ca/keymanager"
 	"github.com/ztdbp/ZACA/ca/revoke"
-	"github.com/ztdbp/ZACA/ca/signer"
 )
 
 // V1APIPrefix is the prefix of all CFSSL V1 API Endpoints.
@@ -94,8 +94,6 @@ var endpoints = map[string]func() (http.Handler, error){
 				return nil, err
 			}
 		}
-
-		signer.CountAll()
 		return h, nil
 	},
 

@@ -21,13 +21,13 @@ import (
 
 	vaultAPI "github.com/hashicorp/vault/api"
 	"github.com/pkg/errors"
-	influx_client "github.com/ztdbp/ZACA/pkg/influxdb/influxdb-client/v2"
+	influx_client "github.com/ztalab/zta-tools/influxdb/client/v2"
 	mysqlDriver "gorm.io/driver/mysql"
 	"gorm.io/gorm"
 
+	"github.com/ztalab/zta-tools/influxdb"
 	"github.com/ztdbp/ZACA/core"
 	"github.com/ztdbp/ZACA/database/mysql"
-	"github.com/ztdbp/ZACA/pkg/influxdb"
 )
 
 func mysqlDialer(config *core.Config, logger *core.Logger) (*gorm.DB, error) {

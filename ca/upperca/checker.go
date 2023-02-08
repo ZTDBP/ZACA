@@ -24,10 +24,10 @@ import (
 	"github.com/ztdbp/cfssl/api/client"
 	"go.uber.org/zap"
 
+	"github.com/ztalab/zta-tools/influxdb"
 	"github.com/ztdbp/ZACA/ca/keymanager"
 	"github.com/ztdbp/ZACA/core"
 	"github.com/ztdbp/ZACA/logic/schema"
-	"github.com/ztdbp/ZACA/pkg/influxdb"
 )
 
 const CfsslHealthApi = "/api/v1/cfssl/health"

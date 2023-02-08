@@ -17,8 +17,8 @@ import (
 	"context"
 
 	vaultAPI "github.com/hashicorp/vault/api"
+	"github.com/ztalab/zta-tools/influxdb"
 	"github.com/ztdbp/ZACA/core/config"
-	"github.com/ztdbp/ZACA/pkg/influxdb"
 	"github.com/ztdbp/ZACA/pkg/logger"
 	"github.com/ztdbp/ZACA/pkg/vaultsecret"
 	"gorm.io/gorm"

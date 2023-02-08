@@ -116,6 +116,7 @@ require (
 	github.com/zeebo/errs v1.2.2 // indirect
 	github.com/zmap/zcrypto v0.0.0-20220803033029-557f3e4940be // indirect
 	github.com/zmap/zlint/v2 v2.2.1 // indirect
+	github.com/ztalab/zta-tools v0.0.0-20230208012245-ed54f37e8ea3 // indirect
 	go.uber.org/atomic v1.9.0 // indirect
 	go.uber.org/goleak v1.2.0 // indirect
 	golang.org/x/net v0.5.0 // indirect

@@ -17,7 +17,7 @@ import (
 	"math"
 	"time"
 
-	"github.com/ztdbp/ZACA/pkg/memorycacher"
+	"github.com/ztalab/zta-tools/memorycacher"
 )
 
 var MapCache *memorycacher.Cache

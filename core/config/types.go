@@ -16,7 +16,7 @@ package config
 import (
 	cfssl_config "github.com/ztdbp/cfssl/config"
 
-	"github.com/ztdbp/ZACA/pkg/influxdb"
+	"github.com/ztalab/zta-tools/influxdb"
 )
 
 const (
