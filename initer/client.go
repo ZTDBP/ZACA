@@ -72,13 +72,16 @@ func influxdbDialer(config *core.Config, logger *core.Logger) {
 				if _, _, err := client.Ping(1 * time.Second); err != nil {
 					return nil, err
 				}
-				metrics := influxdb.NewMetrics(&influxdb.HTTPClient{
+				metrics, err := influxdb.NewMetrics(&influxdb.HTTPClient{
 					Client: client,
 					BatchPointsConfig: influx_client.BatchPointsConfig{
 						Precision: config.Influxdb.Precision,
 						Database:  config.Influxdb.Database,
 					},
 				}, &config.Influxdb)
+				if err != nil {
+					return nil, err
+				}
 				return metrics, nil
 			}()
 			if err != nil {

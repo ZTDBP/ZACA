@@ -9,7 +9,6 @@ require (
 	github.com/gin-gonic/gin v1.7.7
 	github.com/go-resty/resty/v2 v2.6.0
 	github.com/go-sql-driver/mysql v1.7.0
-	github.com/google/certificate-transparency-go v1.1.4
 	github.com/gorilla/mux v1.8.0
 	github.com/guregu/null v4.0.0+incompatible
 	github.com/hashicorp/vault/api v1.8.0
@@ -21,13 +20,13 @@ require (
 	github.com/rubenv/sql-migrate v1.3.0
 	github.com/satori/go.uuid v1.2.0
 	github.com/spf13/cast v1.5.0
-	github.com/spiffe/go-spiffe/v2 v2.0.0-beta.4
 	github.com/swaggo/files v0.0.0-20210815190702-a29dd2bc99b2
 	github.com/swaggo/gin-swagger v1.4.3
 	github.com/swaggo/swag v1.8.1
 	github.com/urfave/cli v1.22.7
+	github.com/ztalab/zta-tools v0.0.0-20230208021955-528a9790d4bd
 	github.com/ztdbp/cfssl v0.0.5
-	github.com/ztdbp/zaca-sdk v0.0.3
+	github.com/ztdbp/zaca-sdk v0.0.7
 	go.uber.org/multierr v1.8.0
 	go.uber.org/zap v1.24.0
 	golang.org/x/crypto v0.5.0
@@ -47,7 +46,6 @@ require (
 	github.com/cespare/xxhash/v2 v2.1.2 // indirect
 	github.com/cloudflare/backoff v0.0.0-20161212185259-647f3cdfc87a // indirect
 	github.com/cpuguy83/go-md2man/v2 v2.0.2 // indirect
-	github.com/davecgh/go-spew v1.1.2-0.20180830191138-d8f796af33cc // indirect
 	github.com/denisenkom/go-mssqldb v0.12.2 // indirect
 	github.com/fatih/color v1.13.0 // indirect
 	github.com/gin-contrib/sse v0.1.0 // indirect
@@ -63,6 +61,7 @@ require (
 	github.com/go-test/deep v1.0.8 // indirect
 	github.com/golang/protobuf v1.5.2 // indirect
 	github.com/golang/snappy v0.0.4 // indirect
+	github.com/google/certificate-transparency-go v1.1.4 // indirect
 	github.com/hashicorp/errwrap v1.1.0 // indirect
 	github.com/hashicorp/go-cleanhttp v0.5.2 // indirect
 	github.com/hashicorp/go-hclog v1.3.1 // indirect
@@ -102,7 +101,6 @@ require (
 	github.com/modern-go/reflect2 v1.0.2 // indirect
 	github.com/oklog/run v1.1.0 // indirect
 	github.com/pierrec/lz4 v2.6.1+incompatible // indirect
-	github.com/pmezard/go-difflib v1.0.1-0.20181226105442-5d4384ee4fb2 // indirect
 	github.com/prometheus/client_model v0.2.0 // indirect
 	github.com/prometheus/common v0.37.0 // indirect
 	github.com/prometheus/procfs v0.8.0 // indirect
@@ -110,13 +108,13 @@ require (
 	github.com/russross/blackfriday/v2 v2.1.0 // indirect
 	github.com/ryanuber/go-glob v1.0.0 // indirect
 	github.com/sirupsen/logrus v1.9.0 // indirect
-	github.com/stretchr/testify v1.8.1 // indirect
+	github.com/spiffe/go-spiffe/v2 v2.0.0-beta.4 // indirect
+	github.com/stretchr/objx v0.5.0 // indirect
 	github.com/ugorji/go/codec v1.1.13 // indirect
 	github.com/weppos/publicsuffix-go v0.15.1-0.20220724114530-e087fba66a37 // indirect
 	github.com/zeebo/errs v1.2.2 // indirect
 	github.com/zmap/zcrypto v0.0.0-20220803033029-557f3e4940be // indirect
 	github.com/zmap/zlint/v2 v2.2.1 // indirect
-	github.com/ztalab/zta-tools v0.0.0-20230208012245-ed54f37e8ea3 // indirect
 	go.uber.org/atomic v1.9.0 // indirect
 	go.uber.org/goleak v1.2.0 // indirect
 	golang.org/x/net v0.5.0 // indirect
