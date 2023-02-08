@@ -20,7 +20,7 @@ import (
 	"time"
 
 	"github.com/go-resty/resty/v2"
-	"github.com/ztdbp/ZACA/pkg/logger"
+	"github.com/ztalab/zta-tools/pkg/logger"
 	"github.com/ztdbp/cfssl/api/client"
 	"go.uber.org/zap"
 

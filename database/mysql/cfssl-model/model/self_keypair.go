@@ -16,16 +16,6 @@ package model
 import (
 	"database/sql"
 	"time"
-
-	"github.com/guregu/null"
-	uuid "github.com/satori/go.uuid"
-)
-
-var (
-	_ = time.Second
-	_ = sql.LevelDefault
-	_ = null.Bool{}
-	_ = uuid.UUID{}
 )
 
 /*
@@ -52,10 +42,6 @@ JSON Sample
 Comments
 -------------------------------------
 [ 0] column is set for unsignedWarning table: self_keypair does not have a primary key defined, setting col position 1 id as primary key
-
-
-
-
 */
 
 // SelfKeypair struct is a row record of the self_keypair table in the cap database

@@ -17,7 +17,7 @@ import (
 	"context"
 	"github.com/ztdbp/ZACA/api"
 	"github.com/ztdbp/ZACA/core"
-	"github.com/ztdbp/ZACA/pkg/logger"
+	"github.com/ztalab/zta-tools/pkg/logger"
 	"net/http"
 	"os"
 	"os/signal"

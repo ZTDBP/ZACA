@@ -21,7 +21,7 @@ import (
 
 	"github.com/pkg/errors"
 	"github.com/ztalab/zta-tools/memorycacher"
-	"github.com/ztdbp/ZACA/pkg/logger"
+	"github.com/ztalab/zta-tools/pkg/logger"
 	"github.com/ztdbp/cfssl/helpers"
 	"github.com/ztdbp/cfssl/hook"
 	"github.com/ztdbp/cfssl/ocsp"
@@ -42,15 +42,6 @@ const (
 	CertStatusCertParseError = "certparseerror"
 	CertStatusOCSPSignError  = "ocspsignerror"
 )
-
-var CertStatusIntMap = map[string]int{
-	CertStatusGood:           200,
-	CertStatusUnknown:        599,
-	CertStatusNotFound:       404,
-	CertStatusServerError:    500,
-	CertStatusCertParseError: 400,
-	CertStatusOCSPSignError:  502,
-}
 
 // SharedSources
 type SharedSources struct {

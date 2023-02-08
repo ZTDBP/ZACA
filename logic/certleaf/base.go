@@ -14,7 +14,7 @@ limitations under the License.
 package certleaf
 
 import (
-	"github.com/ztdbp/ZACA/pkg/logger"
+	"github.com/ztalab/zta-tools/pkg/logger"
 	"go.uber.org/zap"
 	"gorm.io/gorm"
 

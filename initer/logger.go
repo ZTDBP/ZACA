@@ -14,10 +14,10 @@ limitations under the License.
 package initer
 
 import (
-	"github.com/ztdbp/ZACA/pkg/logger/redis_hook"
+	"github.com/ztalab/zta-tools/pkg/logger/redis_hook"
 	"log"
 
-	"github.com/ztdbp/ZACA/pkg/logger"
+	"github.com/ztalab/zta-tools/pkg/logger"
 	"go.uber.org/zap/zapcore"
 
 	"github.com/ztdbp/ZACA/core"

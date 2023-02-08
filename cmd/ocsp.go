@@ -19,7 +19,7 @@ import (
 	ocsp_responder "github.com/ztdbp/ZACA/ca/ocsp"
 	"github.com/ztdbp/ZACA/ca/singleca"
 	"github.com/ztdbp/ZACA/core"
-	"github.com/ztdbp/ZACA/pkg/logger"
+	"github.com/ztalab/zta-tools/pkg/logger"
 	"github.com/ztdbp/cfssl/ocsp"
 	"net/http"
 	"net/http/pprof"

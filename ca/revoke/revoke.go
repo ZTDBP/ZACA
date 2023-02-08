@@ -19,7 +19,7 @@ import (
 	"io/ioutil"
 	"net/http"
 
-	"github.com/ztdbp/ZACA/pkg/logger"
+	"github.com/ztalab/zta-tools/pkg/logger"
 	"github.com/ztdbp/cfssl/api"
 	"github.com/ztdbp/cfssl/certdb"
 	cf_err "github.com/ztdbp/cfssl/errors"
@@ -67,7 +67,6 @@ func (h *Handler) Handle(w http.ResponseWriter, r *http.Request) error {
 	}
 	r.Body.Close()
 
-	// Default the status to good so it matches the cli
 	var req JsonRevokeRequest
 	err = json.Unmarshal(body, &req)
 	if err != nil {
@@ -88,7 +87,6 @@ func (h *Handler) Handle(w http.ResponseWriter, r *http.Request) error {
 		return cf_err.NewBadRequest(err)
 	}
 
-	// Get certificate PEM from vault
 	if hook.EnableVaultStorage {
 		pem, err := core.Is.VaultSecret.GetCertPEM(req.Serial)
 		if err != nil {

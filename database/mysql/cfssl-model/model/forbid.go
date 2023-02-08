@@ -14,18 +14,8 @@ limitations under the License.
 package model
 
 import (
-	"database/sql"
-	"time"
-
 	"github.com/guregu/null"
-	uuid "github.com/satori/go.uuid"
-)
-
-var (
-	_ = time.Second
-	_ = sql.LevelDefault
-	_ = null.Bool{}
-	_ = uuid.UUID{}
+	"time"
 )
 
 /*
@@ -50,9 +40,6 @@ JSON Sample
 Comments
 -------------------------------------
 [ 0] column is set for unsigned
-
-
-
 */
 
 // Forbid struct is a row record of the forbid table in the cap database

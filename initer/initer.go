@@ -18,7 +18,7 @@ import (
 	"github.com/ztdbp/ZACA/ca/datastore"
 	"github.com/ztdbp/ZACA/ca/keymanager"
 	"github.com/ztdbp/ZACA/core"
-	"github.com/ztdbp/ZACA/pkg/logger"
+	"github.com/ztalab/zta-tools/pkg/logger"
 	"github.com/ztdbp/ZACA/pkg/vaultsecret"
 	"github.com/ztdbp/cfssl/hook"
 	"log"

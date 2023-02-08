@@ -14,7 +14,7 @@ limitations under the License.
 package datastore
 
 import (
-	"github.com/ztdbp/ZACA/pkg/logger"
+	"github.com/ztalab/zta-tools/pkg/logger"
 	"time"
 
 	"github.com/ztdbp/ZACA/core"

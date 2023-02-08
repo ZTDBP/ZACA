@@ -14,7 +14,7 @@ limitations under the License.
 package vaultsecret
 
 import (
-	"github.com/ztdbp/ZACA/pkg/logger"
+	"github.com/ztalab/zta-tools/pkg/logger"
 	"strings"
 
 	vaultAPI "github.com/hashicorp/vault/api"

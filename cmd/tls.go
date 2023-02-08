@@ -21,7 +21,7 @@ import (
 	"github.com/ztdbp/ZACA/ca/keymanager"
 	"github.com/ztdbp/ZACA/ca/singleca"
 	"github.com/ztdbp/ZACA/core"
-	"github.com/ztdbp/ZACA/pkg/logger"
+	"github.com/ztalab/zta-tools/pkg/logger"
 	"net/http"
 	"net/http/pprof"
 	"os"

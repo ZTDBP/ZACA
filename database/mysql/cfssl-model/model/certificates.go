@@ -16,16 +16,6 @@ package model
 import (
 	"database/sql"
 	"time"
-
-	"github.com/guregu/null"
-	uuid "github.com/satori/go.uuid"
-)
-
-var (
-	_ = time.Second
-	_ = sql.LevelDefault
-	_ = null.Bool{}
-	_ = uuid.UUID{}
 )
 
 /*
@@ -53,8 +43,6 @@ CREATE TABLE `certificates` (
 JSON Sample
 -------------------------------------
 {    "common_name": "MScvMbPGahOUZxoOmsDxmNYFD",    "ca_label": "ULPoUZlfadBgOnGmGeTYpYlwr",    "pem": "fsrUtxDJCOpQbRZspCyJcqgNf",    "not_before": "2223-09-05T23:15:27.424784706+08:00",    "metadata": "swThVcEqvHBnUptLkmpCDXCQU",    "sans": "wVWFshOhaxDVLKoepAfWDCIyK",    "revoked_at": "2148-12-30T01:02:53.517625773+08:00",    "issued_at": "2022-06-24T10:47:05.902911131+08:00",    "serial_number": "IpDFkiGNIMlxfMZCDtIxJJdUt",    "authority_key_identifier": "VWhZXqDQGfeWADHfPHZUBcWJD",    "status": "jvpyBkTOqxxojTdhHuywdLWIH",    "reason": 32,    "expiry": "2299-08-23T23:34:03.786531333+08:00"}
-
-
 
 */
 

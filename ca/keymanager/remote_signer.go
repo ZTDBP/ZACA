@@ -15,7 +15,7 @@ package keymanager
 
 import (
 	jsoniter "github.com/json-iterator/go"
-	"github.com/ztdbp/ZACA/pkg/logger"
+	"github.com/ztalab/zta-tools/pkg/logger"
 	cfssl_client "github.com/ztdbp/cfssl/api/client"
 	"github.com/ztdbp/cfssl/cli/genkey"
 	"github.com/ztdbp/cfssl/csr"

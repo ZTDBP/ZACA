@@ -19,23 +19,12 @@ import "fmt"
 type Action int32
 
 var (
-	// Create action when record is created
-	Create = Action(0)
-
-	// RetrieveOne action when a record is retrieved from db
-	RetrieveOne = Action(1)
-
-	// RetrieveMany action when record(s) are retrieved from db
+	Create       = Action(0)
+	RetrieveOne  = Action(1)
 	RetrieveMany = Action(2)
-
-	// Update action when record is updated in db
-	Update = Action(3)
-
-	// Delete action when record is deleted in db
-	Delete = Action(4)
-
-	// FetchDDL action when fetching ddl info from db
-	FetchDDL = Action(5)
+	Update       = Action(3)
+	Delete       = Action(4)
+	FetchDDL     = Action(5)
 
 	tables map[string]*TableInfo
 )

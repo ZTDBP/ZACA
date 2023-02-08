@@ -14,18 +14,7 @@ limitations under the License.
 package model
 
 import (
-	"database/sql"
 	"time"
-
-	"github.com/guregu/null"
-	uuid "github.com/satori/go.uuid"
-)
-
-var (
-	_ = time.Second
-	_ = sql.LevelDefault
-	_ = null.Bool{}
-	_ = uuid.UUID{}
 )
 
 /*
@@ -44,9 +33,6 @@ CREATE TABLE `ocsp_responses` (
 JSON Sample
 -------------------------------------
 {    "authority_key_identifier": "uccWRqKiBWSiUMLUVFMPDTagi",    "body": "HgsoAwIJdyGtGlyHKIlydlsfZ",    "expiry": "2038-07-05T20:42:34.735852468+08:00",    "serial_number": "BVkGevecZyAogIjcXevDgWVHj"}
-
-
-
 */
 
 // OcspResponses struct is a row record of the ocsp_responses table in the cap database

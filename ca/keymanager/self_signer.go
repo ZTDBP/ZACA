@@ -14,7 +14,7 @@ limitations under the License.
 package keymanager
 
 import (
-	"github.com/ztdbp/ZACA/pkg/logger"
+	"github.com/ztalab/zta-tools/pkg/logger"
 	"github.com/ztdbp/cfssl/initca"
 )
 

@@ -16,7 +16,7 @@ package mysql
 import (
 	"fmt"
 	migrate "github.com/rubenv/sql-migrate"
-	"github.com/ztdbp/ZACA/pkg/logger"
+	"github.com/ztalab/zta-tools/pkg/logger"
 	_ "gorm.io/driver/mysql"
 	"gorm.io/gorm"
 )

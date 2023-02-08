@@ -16,9 +16,9 @@ package main
 import (
 	"context"
 	"github.com/urfave/cli"
+	"github.com/ztalab/zta-tools/pkg/logger"
 	"github.com/ztdbp/ZACA/cmd"
 	"github.com/ztdbp/ZACA/initer"
-	"github.com/ztdbp/ZACA/pkg/logger"
 	"os"
 )
 
