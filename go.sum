@@ -636,8 +636,8 @@ github.com/ztalab/zta-tools v0.0.0-20230208012245-ed54f37e8ea3 h1:Eot3GXIc4A7cKB
 github.com/ztalab/zta-tools v0.0.0-20230208012245-ed54f37e8ea3/go.mod h1:WZYwDO2P8Dr+wBX04xMtpX7wgceX9ez8fV1iLJPs8dI=
 github.com/ztdbp/cfssl v0.0.5 h1:qMFmZ/S6JEFPMvLZ8w2zYG1YHlbjM9jvsidODCZ62Sc=
 github.com/ztdbp/cfssl v0.0.5/go.mod h1:3q2R1pZxotIXMSN6I2Rqksh7GiH7oqDZ1s2sIOIjh1w=
-github.com/ztdbp/zaca-sdk v0.0.3 h1:aAoVhxah+xMdu/bVVFs9ceFjpcUiEKjbnyCNiLeQu8U=
-github.com/ztdbp/zaca-sdk v0.0.3/go.mod h1:4kCC6WfVlT/SZHzF3ugKSHkgYU3yVY5puEEqxdFdfII=
+github.com/ztdbp/zaca-sdk v0.0.4 h1:sv14O7zU4KdFPvEjE+2BUC9FOYhEiGMi9GD72NUMqjs=
+github.com/ztdbp/zaca-sdk v0.0.4/go.mod h1:GQEn0q5OtAu7gRMu2EbN2zddZUU6AW73LSfpDhsPplc=
 go.etcd.io/etcd/api/v3 v3.5.0/go.mod h1:cbVKeC6lCfl7j/8jBhAK6aIYO9XOjdptoxU/nLQcPvs=
 go.etcd.io/etcd/client/pkg/v3 v3.5.0/go.mod h1:IJHfcCEKxYu1Os13ZdwCwIUTUVGYTSAM3YSwc9/Ac1g=
 go.etcd.io/etcd/client/v2 v2.305.0/go.mod h1:h9puh54ZTgAKtEbut2oe9P4L/oqKCVB6xsXlzd7alYQ=

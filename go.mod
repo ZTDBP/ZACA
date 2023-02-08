@@ -26,7 +26,7 @@ require (
 	github.com/urfave/cli v1.22.7
 	github.com/ztalab/zta-tools v0.0.0-20230208012245-ed54f37e8ea3
 	github.com/ztdbp/cfssl v0.0.5
-	github.com/ztdbp/zaca-sdk v0.0.3
+	github.com/ztdbp/zaca-sdk v0.0.4
 	go.uber.org/multierr v1.8.0
 	go.uber.org/zap v1.24.0
 	golang.org/x/crypto v0.5.0
@@ -132,11 +132,11 @@ require (
 )
 
 replace (
-	github.com/Azure/azure-sdk-for-go/sdk/azcore v0.19.0 => github.com/Azure/azure-sdk-for-go/sdk/azcore v1.3.0
-	github.com/Azure/azure-sdk-for-go/sdk/azcore v0.7.0 => github.com/Azure/azure-sdk-for-go/sdk/azcore v1.1.2
-	github.com/Azure/azure-sdk-for-go/sdk/azidentity v0.11.0 => github.com/Azure/azure-sdk-for-go/sdk/azidentity v1.2.1
-	github.com/ajstarks/svgo v0.0.0-20180226025133-644b8db467af => github.com/ajstarks/svgo v0.0.0-20211024235047-1546f124cd8b
-	github.com/chzyer/logex v1.1.10 => github.com/chzyer/logex v1.2.1
+	//github.com/Azure/azure-sdk-for-go/sdk/azcore v0.19.0 => github.com/Azure/azure-sdk-for-go/sdk/azcore v1.3.0
+	//github.com/Azure/azure-sdk-for-go/sdk/azcore v0.7.0 => github.com/Azure/azure-sdk-for-go/sdk/azcore v1.1.2
+	//github.com/Azure/azure-sdk-for-go/sdk/azidentity v0.11.0 => github.com/Azure/azure-sdk-for-go/sdk/azidentity v1.2.1
+	//github.com/ajstarks/svgo v0.0.0-20180226025133-644b8db467af => github.com/ajstarks/svgo v0.0.0-20211024235047-1546f124cd8b
+	//github.com/chzyer/logex v1.1.10 => github.com/chzyer/logex v1.2.1
 //github.com/zmap/rc2 v0.0.0-20131011165748-24b9757f5521 => github.com/zmap/rc2 v0.0.0-20190804163417-abaa70531248
 //github.com/zmap/zcrypto v0.0.0-20220803033029-557f3e4940be => github.com/zmap/zcrypto v0.0.0-20200911161511-43ff0ea04f21
 //google.golang.org/genproto v0.0.0-20221111202108-142d8a6fa32e => google.golang.org/genproto v0.0.0-20220706185917-7780775163c4
