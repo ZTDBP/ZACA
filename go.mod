@@ -130,3 +130,12 @@ require (
 	gopkg.in/yaml.v2 v2.4.0 // indirect
 	k8s.io/klog/v2 v2.80.1 // indirect
 )
+
+replace (
+	github.com/Azure/azure-sdk-for-go/sdk/azcore v0.19.0 => github.com/Azure/azure-sdk-for-go/sdk/azcore v1.3.0
+	github.com/Azure/azure-sdk-for-go/sdk/azcore v0.7.0 => github.com/Azure/azure-sdk-for-go/sdk/azcore v1.1.2
+	github.com/Azure/azure-sdk-for-go/sdk/azidentity v0.11.0 => github.com/Azure/azure-sdk-for-go/sdk/azidentity v1.2.1
+	github.com/chzyer/logex v1.1.10 => github.com/chzyer/logex v1.2.1
+	github.com/zmap/rc2 v0.0.0-20131011165748-24b9757f5521 => github.com/zmap/rc2 v0.0.0-20190804163417-abaa70531248
+	google.golang.org/genproto v0.0.0-20221111202108-142d8a6fa32e => google.golang.org/genproto v0.0.0-20220706185917-7780775163c4
+)
