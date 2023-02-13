@@ -32,8 +32,7 @@ type RoleProfile struct {
 	IsCa           bool          `json:"is_ca"`
 }
 
-// RoleProfiles Show environmental isolation status
-//  No parameters are required
+// RoleProfiles
 func (l *Logic) RoleProfiles() ([]RoleProfile, error) {
 	cfg := core.Is.Config.Singleca.CfsslConfig
 	if cfg == nil {

@@ -56,7 +56,6 @@ func Serve() *gin.Engine {
 		prefix.GET("/cert", helper.WrapH(handler.CertDetail))
 		prefix.GET("/units_forbid_query", helper.WrapH(handler.UnitsForbidQuery))
 		prefix.GET("/units_certs_list", helper.WrapH(handler.UnitsCertsList))
-		prefix.POST("/units_status", helper.WrapH(handler.UnitsStatus))
 		// Root CA Prohibit operation
 		if !core.Is.Config.Keymanager.SelfSign {
 			lifeCyclePrefix := prefix.Group("/lifecycle")

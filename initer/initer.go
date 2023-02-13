@@ -15,13 +15,12 @@ package initer
 
 import (
 	"github.com/urfave/cli"
+	"github.com/ztalab/zta-tools/pkg/logger"
 	"github.com/ztdbp/ZACA/ca/datastore"
 	"github.com/ztdbp/ZACA/ca/keymanager"
 	"github.com/ztdbp/ZACA/core"
-	"github.com/ztalab/zta-tools/pkg/logger"
 	"github.com/ztdbp/ZACA/pkg/vaultsecret"
 	"github.com/ztdbp/cfssl/hook"
-	"log"
 	"os"
 
 	// ...
@@ -35,7 +34,7 @@ func Init(c *cli.Context) error {
 		return err
 	}
 	initLogger(&conf)
-	log.Printf("started with conf: %+v", conf)
+	//log.Printf("started with conf: %+v", conf)
 
 	hook.EnableVaultStorage = conf.Vault.Enabled
 

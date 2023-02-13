@@ -24,7 +24,7 @@ require (
 	github.com/urfave/cli v1.22.7
 	github.com/ztalab/zta-tools v0.0.2
 	github.com/ztdbp/cfssl v0.0.5
-	github.com/ztdbp/zaca-sdk v0.0.8
+	github.com/ztdbp/zaca-sdk v0.0.9
 	go.uber.org/multierr v1.8.0
 	go.uber.org/zap v1.24.0
 	golang.org/x/crypto v0.5.0

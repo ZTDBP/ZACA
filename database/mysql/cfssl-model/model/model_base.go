@@ -25,16 +25,7 @@ var (
 	Update       = Action(3)
 	Delete       = Action(4)
 	FetchDDL     = Action(5)
-
-	tables map[string]*TableInfo
 )
-
-func init() {
-	tables = make(map[string]*TableInfo)
-
-	tables["certificates"] = certificatesTableInfo
-	tables["ocsp_responses"] = ocsp_responsesTableInfo
-}
 
 // String describe the action
 func (i Action) String() string {
@@ -92,10 +83,4 @@ type ColumnInfo struct {
 	ColumnType         string `json:"column_type"`
 	ColumnLength       int64  `json:"column_length"`
 	DefaultValue       string `json:"default_value"`
-}
-
-// GetTableInfo retrieve TableInfo for a table
-func GetTableInfo(name string) (*TableInfo, bool) {
-	val, ok := tables[name]
-	return val, ok
 }
