@@ -111,5 +111,5 @@ $ go get github.com/ztdbp/zaca-sdk
 
 The classic usage of the ZACA SDK is that the client and the server use the certificate issued by the CA center for encrypted communication. The following is the usage of the sdk between the client and the server.
 
-See：[Demo](https://github.com/ztdbp/zaca-sdk/tree/master/caclient/examples)
+See：[Demo](https://github.com/ZTDBP/zaca-sdk/tree/main/examples)
 
